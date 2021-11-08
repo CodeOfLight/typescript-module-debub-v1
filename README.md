@@ -7,11 +7,9 @@ cd typescript-module-debub-v1
 cd helpers/
 npm install
 npx tsc 
-npm link
 cd ..
 cd app
 npm install
-npm link @testlibs/helpers
 npx ts-node src/index.ts
 code .
 ```
