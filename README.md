@@ -6,11 +6,10 @@ git clone https://github.com/CodeOfLight/typescript-module-debub-v1.git
 cd typescript-module-debub-v1
 cd helpers/
 npm install
-npx tsc 
 cd ..
 cd app
 npm install
-npx ts-node src/index.ts
+npm run via_ts-node
 code .
 ```
 
