@@ -4,12 +4,19 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "npx webpack build --env use_local_chainjs_code_NOT_npm=true --config ./webpack.config.js && node -r source-map-support/register dist/bundle.js",
+    "start": "npx webpack build --config ./webpack.config.js && node dist/bundle.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "source-map-loader": "^3.0.0",
+    "source-map-support": "^0.5.20",
+    "ts-loader": "^9.2.6",
     "ts-node": "^10.4.0",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1"
   }
 }
