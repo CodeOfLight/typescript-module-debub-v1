@@ -101,7 +101,5 @@
     },
     },"references": [
       {"path": "../helpers"}
-    ],"include": [
-      "src/**/*", "../helpers/src/**/*"
     ]
 }

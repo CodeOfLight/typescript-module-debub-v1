@@ -4,11 +4,9 @@ An example of how to configure your TypeScript setup such that you can step into
 ```
 git clone https://github.com/CodeOfLight/typescript-module-debub-v1.git
 cd typescript-module-debub-v1
-cd helpers/
-npm install
-cd ..
+npm --prefix ./helpers install
+npm --prefix ./app install
 cd app
-npm install
 npm run via_ts-node
 code .
 ```
